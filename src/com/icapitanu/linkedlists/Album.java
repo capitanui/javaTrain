@@ -27,6 +27,7 @@ class Album {
             System.out.println(currentSong.getSongTitle().toString());
         }
     }
+
     // find song in album
     private Song getSongInAlbum (Song songToSearch){
         for (Song currentSong : songsInAlbum) {
@@ -36,5 +37,11 @@ class Album {
         return null;
      }
 
+    public String getName() {
+        return name;
+    }
 
+    public ArrayList<Song> getSongsInAlbum() {
+        return songsInAlbum;
+    }
 }
