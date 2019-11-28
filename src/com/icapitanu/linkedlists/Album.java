@@ -9,30 +9,32 @@ class Album {
     private String name;
     private ArrayList<Song> songsInAlbum;
 
-    Album(String name, ArrayList<Song> songsInAlbum) {
+    Album(String name) {
         this.name = name;
         this.songsInAlbum = new ArrayList<>() ;
     }
 
     // add song to album
-    boolean addSong (Song song){
-        if (getSongInAlbum(song)!=null) {
+    void addSong (Song song){
+        if (getSongInAlbum(song)==null) {
             songsInAlbum.add(song);
-            return true;
         }
-        return false;
      }
 
-    // remove song from album
-    boolean removeSong (Song song){
-        return songsInAlbum.remove(song);
-    };
-
+    // list album songs
+    public void listSongs (){
+        for (Song currentSong : songsInAlbum) {
+            System.out.println(currentSong.getSongTitle().toString());
+        }
+    }
     // find song in album
     private Song getSongInAlbum (Song songToSearch){
         for (Song currentSong : songsInAlbum) {
-            if (currentSong.equals(songToSearch)) return currentSong;
-         }
+                if (currentSong.getSongTitle().equals(songToSearch.getSongTitle())) //Why object comparison returns false all the time ?currentSong.equals
+                         return currentSong;
+        }
         return null;
      }
+
+
 }

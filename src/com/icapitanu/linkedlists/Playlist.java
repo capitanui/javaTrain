@@ -9,4 +9,6 @@ public class Playlist {
     private String name;
     private LinkedList<Song> playlist;
 
+
+
 }

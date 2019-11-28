@@ -5,7 +5,6 @@
       <change afterPath="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Album.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Playlist.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/icapitanu/linkedlists/PlaylistApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,38 +32,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Demo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="27" column="23" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/PlaylistApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="22" column="39" selection-start-line="21" selection-start-column="14" selection-end-line="22" selection-end-column="39" />
+            <state relative-caret-position="386">
+              <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Album.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-              <folding>
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,12 +47,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Song.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
               <folding>
-                <element signature="e#299#300#0" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
+                <element signature="e#266#267#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Album.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="32" column="83" selection-start-line="32" selection-start-column="83" selection-end-line="32" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -86,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Playlist.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+            <state relative-caret-position="165">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -164,10 +147,10 @@
         <option value="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Customer.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Demo.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Bank.java" />
+        <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Song.java" />
+        <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Playlist.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/PlaylistApp.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Album.java" />
-        <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Playlist.java" />
-        <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Song.java" />
       </list>
     </option>
   </component>
@@ -300,7 +283,7 @@
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="com.icapitanu.linkedlists.Demo" />
+      <option name="MAIN_CLASS_NAME" value="com.icapitanu.linkedlists.PlaylistApp" />
       <module name="JavaTrain" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Run" />
@@ -367,7 +350,7 @@
       <workItem from="1574245467464" duration="15371000" />
       <workItem from="1574674128986" duration="9112000" />
       <workItem from="1574696073309" duration="10909000" />
-      <workItem from="1574784494422" duration="6788000" />
+      <workItem from="1574784494422" duration="9748000" />
     </task>
     <servers />
   </component>
@@ -404,13 +387,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140674000" />
+    <option name="totallyTimeSpent" value="143634000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="981" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1373802" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1373802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -419,7 +402,7 @@
       <window_info id="Job Explorer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295838" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34083238" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34083238" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932507" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -497,13 +480,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/oop/Cylinder.java" />
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/oop/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/oop/Floor.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/oop/poly/Main.java" />
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/oopmaster/Hamburger.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -718,10 +694,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Demo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="143" column="47" selection-start-line="143" selection-end-line="144" />
+          <folding>
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5784#5785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/PlaylistApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="22" column="39" selection-start-line="21" selection-start-column="14" selection-end-line="22" selection-end-column="39" />
+        <state relative-caret-position="386">
+          <caret line="48" column="5" lean-forward="true" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -730,40 +727,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Playlist.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Album.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="165">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Song.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
           <folding>
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#350#351#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Demo.java">
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Album.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="27" column="23" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="326">
+          <caret line="32" column="83" selection-start-line="32" selection-start-column="83" selection-end-line="32" selection-end-column="83" />
         </state>
       </provider>
     </entry>

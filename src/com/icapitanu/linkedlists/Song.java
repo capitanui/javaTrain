@@ -9,7 +9,11 @@ class Song {
         this.duration = duration;
     }
 
-    private static Song createSong(String songTitle, int duration){
+    public String getSongTitle() {
+        return songTitle;
+    }
+
+    public static Song createSong(String songTitle, int duration){
         return new Song(songTitle,duration);
     }
 }

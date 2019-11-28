@@ -28,12 +28,24 @@ public class PlaylistApp {
     // As an optional extra, provide an option to remove the current song from the playlist
     // (hint: listiterator.remove()
 
-    private ArrayList<Album> albums;
+    private static ArrayList<Album> albums;
 
     // List all albums
     // Add song to album
     // Add song to playlist
     // List playlist
     // Quit, Next song, Previous song, Replay current song
+
+    public static void main(String[] args) {
+        // Statically define 2 albums and add songs into these
+        Album myAlbum = new Album("S&M\n");
+        myAlbum.addSong(Song.createSong("The Ecstasy of Gold", 153));
+        myAlbum.addSong(Song.createSong("The Call of Ktulu", 132));
+        myAlbum.addSong(Song.createSong("Master of Puppets", 132));
+        myAlbum.addSong(Song.createSong("The Ecstasy of Gold", 153));
+        myAlbum.listSongs();
+
+    }
+
 
 }
