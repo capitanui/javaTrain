@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4e36a5f-92af-4685-8447-ef6b180bc5c6" name="Default Changelist" comment="" />
+    <list default="true" id="c4e36a5f-92af-4685-8447-ef6b180bc5c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/icapitanu/linkedlists/PlaylistApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaTrain/com/icapitanu/linkedlists/Demo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaTrain/com/icapitanu/linkedlists/Demo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/icapitanu/autoboxing/BankApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/icapitanu/autoboxing/BankApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Demo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Demo.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,14 +37,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Demo.java">
+        <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/PlaylistApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#234#242#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -55,7 +59,14 @@
     <findStrings>
       <find>getCustomer</find>
       <find>has</find>
+      <find>listit</find>
+      <find>listIterator(</find>
+      <find>listIterator(e</find>
+      <find>add</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/src" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -93,18 +104,19 @@
         <option value="$PROJECT_DIR$/src/com/icapitanu/arraylist/Main.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/arraylist/main.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/arraylist/GroceryListApp.java" />
-        <option value="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Customer.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Branch.java" />
-        <option value="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Bank.java" />
         <option value="$PROJECT_DIR$/src/unitests/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/unitests/asd.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/unitests/asaa.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/oopmaster/MasterChallenge.java" />
-        <option value="$PROJECT_DIR$/src/com/icapitanu/autoboxing/BankApp.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/unitests/BankAccount.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/unitests/BankAccountTest.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Customer.java" />
+        <option value="$PROJECT_DIR$/src/com/icapitanu/autoboxing/BankApp.java" />
+        <option value="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Customer.java" />
         <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/Demo.java" />
+        <option value="$PROJECT_DIR$/src/com/icapitanu/autoboxing/Bank.java" />
+        <option value="$PROJECT_DIR$/src/com/icapitanu/linkedlists/PlaylistApp.java" />
       </list>
     </option>
   </component>
@@ -114,37 +126,12 @@
     <option name="width" value="1920" />
     <option name="height" value="981" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTrain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTrain" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTrain" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Production'; set:Production; class com.intellij.psi.search.scope.ProjectProductionScope">
           <expand>
@@ -182,6 +169,45 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTrain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTrain" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTrain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTrain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="icapitanu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaTrain" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="icapitanu" type="462c0819:PsiDirectoryNode" />
+              <item name="linkedlists" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaTrain" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,6 +216,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -289,6 +316,7 @@
       <workItem from="1574245467464" duration="15371000" />
       <workItem from="1574674128986" duration="9112000" />
       <workItem from="1574696073309" duration="10909000" />
+      <workItem from="1574784494422" duration="4317000" />
     </task>
     <servers />
   </component>
@@ -325,12 +353,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="133886000" />
+    <option name="totallyTimeSpent" value="138203000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1680" y="23" width="1920" height="981" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13631523" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1373802" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -339,7 +368,7 @@
       <window_info id="Job Explorer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295838" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34083238" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34083238" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39932507" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -532,34 +561,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/unitests/as.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/unitests/asd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/unitests/da.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="31" lean-forward="true" selection-start-column="31" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/unitests/asaa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/unitests/as.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/unitests/asd.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/unitests/da.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/unitests/asaa.java" />
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/oopmaster/MasterChallenge.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -567,31 +572,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/autoboxing/BankApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/autoboxing/Customer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="47" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/autoboxing/Branch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/autoboxing/Bank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -613,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="873" column="20" selection-start-line="873" selection-start-column="20" selection-end-line="873" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/unitests/BankAccountTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -630,14 +607,88 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="865" column="40" selection-start-line="865" selection-start-column="40" selection-end-line="865" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="298" column="30" selection-start-line="297" selection-start-column="14" selection-end-line="299" selection-end-column="5" />
+          <folding>
+            <element signature="e#9883#9884#0" expanded="true" />
+            <element signature="e#9921#9922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/AbstractSequentialList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="238" column="22" selection-start-line="238" selection-start-column="22" selection-end-line="238" selection-end-column="22" />
+          <folding>
+            <element signature="e#8834#8835#0" expanded="true" />
+            <element signature="e#8871#8872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/util/ListIterator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="108" column="4" lean-forward="true" selection-start-line="108" selection-start-column="4" selection-end-line="108" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="1148" column="60" lean-forward="true" selection-start-line="1148" selection-end-line="1149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/autoboxing/BankApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="101" column="11" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/Demo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#234#242#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/autoboxing/Customer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#624#625#0" expanded="true" />
+            <element signature="e#651#652#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/autoboxing/Bank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/icapitanu/linkedlists/PlaylistApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
