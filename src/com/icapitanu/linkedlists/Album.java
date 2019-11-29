@@ -1,6 +1,7 @@
 package com.icapitanu.linkedlists;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /*
 * @author ionutcapitanu on 2019-11-28 
@@ -33,6 +34,7 @@ class Album {
     public String getName() {
         return name;
     }
+
 
     ArrayList<Song> getSongsInAlbum() {
         return songsInAlbum;

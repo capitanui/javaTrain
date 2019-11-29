@@ -14,6 +14,7 @@ class Song {
     }
 
     public static Song createSong(String songTitle, int duration){
+
         return new Song(songTitle,duration);
     }
 }

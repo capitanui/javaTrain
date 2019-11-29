@@ -27,6 +27,7 @@ class Playlist {
         }
         return null;
     }
+
     LinkedList<Song> getPlaylist() {
         return playlist;
     }

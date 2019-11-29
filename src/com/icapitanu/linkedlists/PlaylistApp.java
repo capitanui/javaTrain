@@ -14,10 +14,10 @@ public class PlaylistApp {
     private static Scanner input = new Scanner (System.in);
     private static ArrayList<Album> albums;
     private static Playlist myPlaylist;
+    private static boolean forwardIter=true;
 
     public static void main(String[] args) {
 
-        boolean forwardIter = true;
         boolean quit = false;
 
         initPlaylist();
@@ -42,37 +42,13 @@ public class PlaylistApp {
                     listPlaylistSongs();
                     break;
                 case 3:
-                    if (songIterator.hasNext() && forwardIter) {
-                        System.out.println("Currently playing " + songIterator.next().getSongTitle());
-                         } else if (songIterator.hasNext()) {
-                                    forwardIter = true;
-                                    songIterator.next();
-                                    System.out.println("Currently playing " + songIterator.next().getSongTitle());
-                                } else {
-                                     System.out.println("No more songs in the playlist! ");
-                                     forwardIter=false;
-                                        }
+                    playNextPlaylistSong(songIterator);
                     break;
                 case 4:
-                    if (songIterator.hasPrevious() && !forwardIter)
-                             System.out.println("Currently playing " + songIterator.previous().getSongTitle());
-                        else if (songIterator.hasPrevious()){
-                                    forwardIter=false;
-                                    songIterator.previous();
-                                    System.out.println("Currently playing " + songIterator.previous().getSongTitle());
-                                } else {
-                                        System.out.println("Reached to the beginning of the list! ");
-                                        forwardIter=true;
-                                    }
-                     break;
+                     playPrevPlaylistSong(songIterator);
+                    break;
                 case 5:
-                    if (forwardIter) {
-                        songIterator.previous();
-                        System.out.println("Re-playing " + songIterator.next().getSongTitle());
-                    }else {
-                        songIterator.next();
-                        System.out.println("Re-playing " + songIterator.previous().getSongTitle());
-                    }
+                    playCurrentPlaylistSong(songIterator);
                     break;
                 case 6:
                     songIterator.remove();
@@ -140,6 +116,40 @@ public class PlaylistApp {
             index++;
         }
     }
+
+    private static void playCurrentPlaylistSong(ListIterator<Song> songIterator) {
+        if (forwardIter) {
+            songIterator.previous();
+            System.out.println("Re-playing " + songIterator.next().getSongTitle());
+        }else {
+            songIterator.next();
+            System.out.println("Re-playing " + songIterator.previous().getSongTitle());
+        }
+    }
+
+    private static void playNextPlaylistSong(ListIterator<Song> songIterator) {
+        if (!forwardIter) {
+            forwardIter = true;
+            songIterator.next();
+            if (songIterator.hasNext()) {
+                System.out.println("Currently playing " + songIterator.next().getSongTitle());
+            } else System.out.println("Reached to the end of the list! ");
+        } else if (songIterator.hasNext()) {
+            System.out.println("Currently playing " + songIterator.next().getSongTitle());
+        } else System.out.println("Reached to the end of the list! ");
+    }
+
+    private static void playPrevPlaylistSong(ListIterator<Song> songIterator) {
+       if (forwardIter) {
+           forwardIter = false;
+           songIterator.previous();
+           if (songIterator.hasPrevious()) {
+               System.out.println("Currently playing " + songIterator.previous().getSongTitle());
+           } else System.out.println("Reached to the beginning of the list! ");
+       } else if (songIterator.hasPrevious()) {
+           System.out.println("Currently playing " + songIterator.previous().getSongTitle());
+       } else System.out.println("Reached to the beginning of the list! ");
+   }
 
 }
 
