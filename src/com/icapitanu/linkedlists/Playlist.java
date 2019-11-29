@@ -1,35 +1,33 @@
 package com.icapitanu.linkedlists;
 
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.ListIterator;
 
 /*
 * @author ionutcapitanu on 2019-11-28 
 */
+
 class Playlist {
     private String name;
     private LinkedList<Song> playlist;
 
-    public Playlist(String name) {
+    Playlist(String name) {
         this.name = name;
         playlist = new LinkedList<>();
       }
 
      void addSong(Song song){
-        if (!(findSongByTitle(song.getSongTitle())))
+        if  (findSongByTitle(song.getSongTitle())==null)
                 playlist.add(song);
-    }
+     }
 
-    private boolean findSongByTitle(String songTitle){
+     Song findSongByTitle(String songTitle){
         for (Song s : playlist) {
             if (s.getSongTitle().equals(songTitle))
-                 return true;
+                 return s;
         }
-        return false;
+        return null;
     }
-
-    public LinkedList<Song> getPlaylist() {
+    LinkedList<Song> getPlaylist() {
         return playlist;
     }
 }

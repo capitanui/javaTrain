@@ -2,6 +2,7 @@ package com.icapitanu.linkedlists;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.ListIterator;
 import java.util.Scanner;
 
@@ -9,35 +10,10 @@ import java.util.Scanner;
 * @author ionutcapitanu on 2019-11-27 
 */
 public class PlaylistApp {
-    // Create a program that implements a playlist for songs
-    // Create a Song class having Title and Duration for a song.
 
-    // The program will have an Album class containing a list of songs.
-    // The albums will be stored in an ArrayList
-
-    // Songs from different albums can be added to the playlist and will appear in the list in the order
-    // they are added.
-
-    // Once the songs have been added to the playlist, create a menu of options to:-
-
-    // Quit,Skip forward to the next song, skip backwards to a previous song.  Replay the current song.
-    // List the songs in the playlist
-    // A song must exist in an album before it can be added to the playlist (so you can only play songs that
-    // you own).
-
-    // Hint:  To replay a song, consider what happened when we went back and forth from a city before we
-    // started tracking the direction we were going.
-    // As an optional extra, provide an option to remove the current song from the playlist
     private static Scanner input = new Scanner (System.in);
-
     private static ArrayList<Album> albums;
-    private static Album myAlbum;
     private static Playlist myPlaylist;
-
-    // List all albums
-    // Add song to playlist
-    // List playlist
-    // Quit, Next song, Previous song, Replay current song
 
     public static void main(String[] args) {
 
@@ -50,7 +26,7 @@ public class PlaylistApp {
         ListIterator<Song> songIterator = myPlaylist.getPlaylist().listIterator();
 
         while (!quit) {
-            int choice=0;
+            int choice;
             System.out.print("Press : ");
             choice = input.nextInt();
             input.nextLine();
@@ -66,9 +42,9 @@ public class PlaylistApp {
                     listPlaylistSongs();
                     break;
                 case 3:
-                    if (songIterator.hasNext() && forwardIter)
-                          System.out.println("Currently playing " + songIterator.next().getSongTitle());
-                        else if (songIterator.hasNext()) {
+                    if (songIterator.hasNext() && forwardIter) {
+                        System.out.println("Currently playing " + songIterator.next().getSongTitle());
+                         } else if (songIterator.hasNext()) {
                                     forwardIter = true;
                                     songIterator.next();
                                     System.out.println("Currently playing " + songIterator.next().getSongTitle());
@@ -76,7 +52,7 @@ public class PlaylistApp {
                                      System.out.println("No more songs in the playlist! ");
                                      forwardIter=false;
                                         }
-                        break;
+                    break;
                 case 4:
                     if (songIterator.hasPrevious() && !forwardIter)
                              System.out.println("Currently playing " + songIterator.previous().getSongTitle());
@@ -90,10 +66,19 @@ public class PlaylistApp {
                                     }
                      break;
                 case 5:
-                    songIterator.previous();
-                    System.out.println("Currently playing " + songIterator.next().getSongTitle());
+                    if (forwardIter) {
+                        songIterator.previous();
+                        System.out.println("Re-playing " + songIterator.next().getSongTitle());
+                    }else {
+                        songIterator.next();
+                        System.out.println("Re-playing " + songIterator.previous().getSongTitle());
+                    }
                     break;
                 case 6:
+                    songIterator.remove();
+                    System.out.println("Current song was removed from playlist");
+                    break;
+                case 7:
                     quit=true;
                     break;
             }
@@ -102,26 +87,39 @@ public class PlaylistApp {
 
     private static void displayMenu () {
         System.out.println("\nMenu Options :");
-        System.out.println("\t 0  - to display menu ");
-        System.out.println("\t 1  - to list albums");
-        System.out.println("\t 2  - to list playlist songs");
-        System.out.println("\t 3  - to skip to next song");
-        System.out.println("\t 4  - to skip to previous song");
-        System.out.println("\t 5  - to replay current song ");
-        System.out.println("\t 6 - quit");
+        System.out.println("\t 0  - Display menu ");
+        System.out.println("\t 1  - List albums");
+        System.out.println("\t 2  - List playlist");
+        System.out.println("\t 3  - Next");
+        System.out.println("\t 4  - Previous");
+        System.out.println("\t 5  - Re-play");
+        System.out.println("\t 6 -  Remove current song from playlist");
+        System.out.println("\t 7 -  Quit");
     }
 
     private static void initPlaylist(){
         albums = new ArrayList<>();
-        myAlbum = new Album("MyAlbum");
-        albums.add(myAlbum);
+
+        //create new album and add it to the album list
+        Album metallicaSM = new Album("Metallica");
+        albums.add(metallicaSM);
+
+        //create new playlist
         myPlaylist = new Playlist("MyPlaylist");
-        myAlbum.addSong(Song.createSong("The Ecstasy of Gold", 153));
-        myAlbum.addSong(Song.createSong("The Call of Ktulu", 132));
-        myAlbum.addSong(Song.createSong("Master of Puppets", 132));
-        myPlaylist.addSong(Song.createSong("The Ecstasy of Gold", 153));
-        myPlaylist.addSong(Song.createSong("Master of Puppets", 132));
-        myPlaylist.addSong(Song.createSong("The Call of Ktulu", 132));
+
+         // Create metallicaSM songs
+        metallicaSM.addSong(Song.createSong("The Ecstasy of Gold", 153));
+        metallicaSM.addSong(Song.createSong("The Call of Ktulu", 132));
+        metallicaSM.addSong(Song.createSong("Master of Puppets", 165));
+        metallicaSM.addSong(Song.createSong("Of Wolf and Man", 174));
+        metallicaSM.addSong(Song.createSong("The Thing That Should Not Be"	, 109));
+        metallicaSM.addSong(Song.createSong("Fuel"	, 132));
+        metallicaSM.addSong(Song.createSong("The Memory Remains", 189));
+
+        // Add all songs in album metallica to playlist
+        for (Song s : albums.get(0).getSongsInAlbum()) {
+             myPlaylist.addSong(s);
+        }
     }
 
     private static void listAlbums() {
@@ -144,3 +142,4 @@ public class PlaylistApp {
     }
 
 }
+

@@ -21,13 +21,6 @@ class Album {
         }
      }
 
-    // list album songs
-    public void listSongs (){
-        for (Song currentSong : songsInAlbum) {
-            System.out.println(currentSong.getSongTitle().toString());
-        }
-    }
-
     // find song in album
     private Song getSongInAlbum (Song songToSearch){
         for (Song currentSong : songsInAlbum) {
@@ -41,7 +34,7 @@ class Album {
         return name;
     }
 
-    public ArrayList<Song> getSongsInAlbum() {
+    ArrayList<Song> getSongsInAlbum() {
         return songsInAlbum;
     }
 }
