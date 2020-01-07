@@ -1,8 +1,6 @@
 package com.icapitanu.linkedlists;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.ListIterator;
 import java.util.Scanner;
 
@@ -93,7 +91,7 @@ public class PlaylistApp {
         metallicaSM.addSong(Song.createSong("The Memory Remains", 189));
 
         // Add all songs in album metallica to playlist
-        for (Song s : albums.get(0).getSongsInAlbum()) {
+        for (Song s : albums.get(0).getSongsList()) {
              myPlaylist.addSong(s);
         }
     }
@@ -101,7 +99,7 @@ public class PlaylistApp {
     private static void listAlbums() {
         for (int i=0; i<albums.size(); i++){
             Album currentAlbum = albums.get(i);
-            ArrayList<Song> albumSongs = currentAlbum.getSongsInAlbum();
+            ArrayList<Song> albumSongs = currentAlbum.getSongsList();
             System.out.println("\t" +(i+1) + "." + currentAlbum.getName() + " album, has the following songs :");
             for (int j=0;j<albumSongs.size();j++){
                 System.out.println("\t\t" + (j+1) + ". : " + albumSongs.get(j).getSongTitle());

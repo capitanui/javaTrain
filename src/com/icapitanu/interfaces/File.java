@@ -1,7 +1,6 @@
 package com.icapitanu.interfaces;
 
  import java.util.ArrayList;
- import java.util.Scanner;
 
 /*
 * @author ionutcapitanu on 2019-12-04 
@@ -11,6 +10,9 @@ public class File implements IsSaveAble {
     private String fileExtension;
     private String fileContent;
 
+    public File() {
+    }
+
     public File(String fileName, String extension) {
         this.fileName = fileName;
         this.fileExtension = extension;
@@ -18,11 +20,15 @@ public class File implements IsSaveAble {
     }
 
     public void writeToFile (String  text) {
-        this.fileContent += text;
+            this.fileContent += text;
      }
 
     public String getFileName() {
         return fileName;
+    }
+
+    public String getFileExtension() {
+        return fileExtension;
     }
 
     @Override
@@ -43,6 +49,16 @@ public class File implements IsSaveAble {
 
     @Override
     public String toString() {
-       return "File " + fileName + "." + fileExtension + "  : \n" + fileContent;
+       return  fileName + "." + fileExtension;
     }
+
+    public String getFileContent() {
+        return fileContent;
+    }
+
+    public static File createNewFile (String fileName, String fileExtension) {
+        return new File(fileName,fileExtension);
+    }
+
+
 }
