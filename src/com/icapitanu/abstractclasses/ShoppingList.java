@@ -3,7 +3,7 @@ package com.icapitanu.abstractclasses;
 public class ShoppingList {
     private String name;
      private ShoppingListItem head;
-    private ShoppingListItem tail;
+     private ShoppingListItem tail;
 
     public ShoppingList(String name) {
         this.name = name;
@@ -43,7 +43,6 @@ public class ShoppingList {
                    if (itemToRemove.hasPrevious())  itemToRemove.goBack().setNext(itemToRemove.next);
                         else head = (ShoppingListItem) itemToRemove.goNext();
 
-                           System.out.println("itemToRemove value : " + itemToRemove.getValue());
                  itemToRemove.setNext(null);
                  itemToRemove.setPrevious(null);
                 return true;

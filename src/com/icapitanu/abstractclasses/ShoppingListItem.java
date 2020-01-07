@@ -1,9 +1,6 @@
 package com.icapitanu.abstractclasses;
 
-/*
-* @author ionutcapitanu on 2019-12-16 
-*/
-public class ShoppingListItem extends com.icapitanu.ListItem {
+public class ShoppingListItem extends ListItem {
 
     private double price;
 
@@ -13,19 +10,13 @@ public class ShoppingListItem extends com.icapitanu.ListItem {
     }
 
     @Override
-    public com.icapitanu.ListItem goNext() {
-        if (hasNext()) {
+    public ListItem goNext() {
             return next;
-        }
-        return null;
     }
 
     @Override
-    public com.icapitanu.ListItem goBack() {
-        if (hasPrevious()){
+    public ListItem goBack() {
             return previous;
-        }
-        return null;
      }
 
     public double getPrice() {
