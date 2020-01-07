@@ -23,16 +23,16 @@ import java.util.ArrayList;
 // e.g. check if exists, or does not exist, etc.
 // Think about where you are adding the code to perform certain actions
 
-public  class Bank {
+class Bank {
     private String name;
     private ArrayList<Branch> branches;
 
-    public Bank(String name) {
+     Bank(String name) {
         this.name = name;
         this.branches = new ArrayList<Branch>();
     }
 
-    public boolean addBranch(String name) {
+    boolean addBranch(String name) {
         if (findBranchByName(name)) return false; // Branch already exists
             else {
                     Branch newBranch = new Branch(name);
@@ -48,7 +48,7 @@ public  class Bank {
          return false;
      }
 
-     public Branch getBranchByName(String branchName) {
+     Branch getBranchByName(String branchName) {
          for (int i = 0; i < branches.size(); i++) {
               Branch checkedBranch = branches.get(i);
              if (checkedBranch.getName().equals(branchName))
@@ -57,13 +57,15 @@ public  class Bank {
          return null;
      }
 
-     public void listBranches() {
+
+     void listBranches() {
          for (int i=0; i<branches.size(); i++) {
              System.out.println(i+1 + ". " + branches.get(i).getName());
          }
      }
 
-     public void listBranchCustomers(String branchName, boolean includeTransactions) {
+
+     void listBranchCustomers(String branchName, boolean includeTransactions) {
          if (findBranchByName(branchName)) {
              System.out.println("Branch " + branchName + " has the following customer list : ");
             ArrayList<Customer> branchCustomers = getBranchByName(branchName).getBranchCustomers();

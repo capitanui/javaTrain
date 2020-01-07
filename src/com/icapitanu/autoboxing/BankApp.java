@@ -8,7 +8,7 @@ public  class BankApp {
 
     public static void main (String[] args){
         boolean quit=false;
-        int choice=0;
+        int choice;
         displayMenu();
 
         while (!quit) {
@@ -42,7 +42,7 @@ public  class BankApp {
         }
 
     }
-    public static void displayMenu () {
+    private static void displayMenu () {
             System.out.println("\nMenu Options :");
             System.out.println("\t 0  - to print menu options");
             System.out.println("\t 1  - to list branches");
@@ -53,14 +53,14 @@ public  class BankApp {
             System.out.println("\t 6  - quit");
     }
 
-    public static void addBranch() {
+    private static void addBranch() {
             System.out.print("\t Enter the new branch name: " );
             String branchName = input.nextLine();
             if(bank.addBranch(branchName)) System.out.println("\t Branch " + branchName + " was added succesfully");
             else System.out.println("\t An error occurred while adding branch.");
     }
 
-    public static void addCustomerToBranch() {
+    private static void addCustomerToBranch() {
             System.out.print("\t Enter branch name: ");
             String branchName = input.nextLine();
             if (bank.getBranchByName(branchName)!=null) {
@@ -71,12 +71,12 @@ public  class BankApp {
                 input.nextLine();
 
                 //save customer
-                Customer newCustomer = Customer.createCustomer(custName, Double.valueOf(initTrans));
+                Customer newCustomer = Customer.createCustomer(custName,initTrans);
                 bank.getBranchByName(branchName).addCustomer(newCustomer);
             } else System.out.println("\t Invalid branch provided");
     }
 
-    public static void addCustomerTransaction() {
+    private static void addCustomerTransaction() {
         System.out.print("\t Enter branch to operate on :");
         String branchName = input.nextLine();
 
@@ -93,13 +93,13 @@ public  class BankApp {
                 double amount = input.nextDouble();
                 input.nextLine();
                 //save the transaction
-                bank.getBranchByName(branchName).getCustomerByName(customer).addTransaction(Double.valueOf(amount));
+                bank.getBranchByName(branchName).getCustomerByName(customer).addTransaction(amount);
             } else System.out.println("\t Demo " + customer + " is not a valid customer of branch " + branchName);
         } else System.out.println("\t Invalid branch provided");
     }
 
 
-    public static void listBranchCustomers() {
+    private static void listBranchCustomers() {
             System.out.print("Enter branch name : ");
             String branchName = input.nextLine();
             System.out.print("\t Would you like a list of transactions for each customer to be listed as well? [Y/N]");

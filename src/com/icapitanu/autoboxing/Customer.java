@@ -2,33 +2,32 @@ package com.icapitanu.autoboxing;
 
 import java.util.ArrayList;
 
-public  class Customer {
+ class Customer {
     private String name;
     private ArrayList<Double> transactions;
 
-    public Customer(String name,double initialTransaction) {
+     private Customer(String name,double initialTransaction) {
         this.name = name;
-        this.transactions = new ArrayList<Double>();
+        this.transactions = new ArrayList<>();
         addTransaction(initialTransaction);
      }
 
-    public boolean addTransaction(double transAmount){
+     void addTransaction(double transAmount){
         if (transAmount > 0) {
-            transactions.add(Double.valueOf(transAmount)); //Validate transaction amount
+            transactions.add(transAmount); //Validate transaction amount
          }
-            else return false;
-        return true;
     }
 
-    public String getName() {
+
+    String getName() {
         return name;
     }
 
-    public ArrayList<Double> getTransactions() {
+    ArrayList<Double> getTransactions() {
         return transactions;
     }
 
-    public static Customer createCustomer(String name,Double initialTransaction){
+    static Customer createCustomer(String name,Double initialTransaction){
         return new Customer(name,initialTransaction);
     }
 }
