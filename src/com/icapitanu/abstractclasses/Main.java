@@ -3,10 +3,9 @@ package com.icapitanu.abstractclasses;
 import java.util.Scanner;
 
 public class Main {
-
+    private static Scanner input = new Scanner(System.in);
     public static void main(String[] args) {
         ShoppingList myShoppingList = new ShoppingList("My Shopping List");
-        Scanner input = new Scanner(System.in);
         boolean quit = false;
 
         while (!quit) {
@@ -27,16 +26,21 @@ public class Main {
                         else System.out.println("An error occurred on adding item.");
                 break;
                 case 2:
-                    System.out.print("\t Enter item name to remove : ");
-                    String itemRem = input.nextLine();
-                    if (myShoppingList.removeItem(itemRem)) System.out.println("Item succesfully removed from the list.");
-                    else System.out.println("An error occurred on removing item.");
+                    removeItem(myShoppingList);
                     break;
                 case 3:
                     quit=true;
                     break;
             }
         }
+    }
+
+    private static void removeItem(ShoppingList myShoppingList) {
+        String itemName = "item name";
+        System.out.print("\t Enter " + itemName + " to remove : ");
+        String itemRem = input.nextLine();
+        if (myShoppingList.removeItem(itemRem)) System.out.println("Item succesfully removed from the list.");
+        else System.out.println("An error occurred on removing item.");
     }
 
     public static void printMenu() {
