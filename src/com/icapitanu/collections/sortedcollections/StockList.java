@@ -19,6 +19,7 @@ public class StockList {
         if (item != null) {
             // check if already have quantities of this item
             StockItem inStock = list.getOrDefault(item.getName(),item);
+
             // if there are already stocks on this item, adjust the quantity
             if (inStock != item) {
                 item.adjustStock(inStock.quantityInStock());
@@ -30,17 +31,17 @@ public class StockList {
         return 0;
     }
 
-    public int sellStock (String item, int quantity) {
+    public int adjustReservedStock (String item, int quantity) {
+        StockItem inStock = list.getOrDefault(item, null);
 
-        StockItem inStock = list.getOrDefault(item,null);
-
-         if ((inStock != null) && (inStock.quantityInStock() >= quantity) && (quantity > 0)) {
-             inStock.adjustStock(-quantity);
+        if ((inStock != null) && (inStock.quantityInStock() >= quantity))
+        {
+            inStock.setReservedStock(quantity);
             return quantity;
         }
-
         return 0;
     }
+
 
     public StockItem get(String itemName) {
         return list.get(itemName);

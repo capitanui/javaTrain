@@ -10,7 +10,7 @@ public class Main {
         StockItem temp = new StockItem( "bread", 0.86, 100 );
         stockList.addStock( temp );
 
-        temp = new StockItem( "cacke", 1.10, 7 );
+        temp = new StockItem( "cake", 1.10, 7 );
         stockList.addStock( temp );
 
         temp = new StockItem( "car", 12.5, 2 );
@@ -43,24 +43,47 @@ public class Main {
 
         Basket timsBasket = new Basket("Tim");
 
-         sellItem(timsBasket,"car",1);
+         addItem(timsBasket,"car",1);
         System.out.println(timsBasket);
 
-        sellItem(timsBasket,"car",1);
+        addItem(timsBasket,"car",1);
         System.out.println(timsBasket);
 
-        sellItem(timsBasket,"car",1);
-        sellItem(timsBasket,"spanner",5);
+        addItem(timsBasket,"car",1);
+        addItem(timsBasket,"spanner",5);
         System.out.println(timsBasket);
 
-        sellItem(timsBasket,"juice",4);
-        sellItem(timsBasket,"cup",12);
-        sellItem(timsBasket,"bread",1);
+        addItem(timsBasket,"juice",4);
+        addItem(timsBasket,"cup",12);
+        addItem(timsBasket,"bread",1);
+        System.out.println(timsBasket);
+
+        removeItem(timsBasket,"cup",1);
+        System.out.println(timsBasket);
+        removeItem(timsBasket,"cup",1);
+        System.out.println(timsBasket);
+        removeItem(timsBasket,"juice",1);
+        System.out.println(timsBasket);
+        removeItem(timsBasket,"juice",4);
+        System.out.println(timsBasket);
+        removeItem(timsBasket,"car",1);
+        System.out.println(timsBasket);
+
+        addItem(timsBasket,"cup",3);
+        System.out.println(timsBasket);
+
+        addItem(timsBasket,"cake",6);
+        System.out.println(timsBasket);
+
+        addItem(timsBasket,"cake",2);
+        System.out.println(timsBasket);
+
+        timsBasket.checkout();
 
 
     }
 
-      public static int sellItem(Basket basket, String item, int quantity) {
+      public static int addItem(Basket basket, String item, int quantity) {
         //retrieve the item from the stock list
           StockItem stockItem = stockList.get(item);
           if (stockItem == null) {
@@ -68,11 +91,27 @@ public class Main {
               return  0;
           }
 
-          if (stockList.sellStock(item, quantity) !=  0) {
-              basket.addToBasket(stockItem,quantity);
+          if (stockList.adjustReservedStock(item, quantity) !=  0) {
+              basket.addItem(stockItem,quantity);
               return quantity;
           }
 
         return 0;
       }
+
+    public static int removeItem(Basket basket, String item, int quantity) {
+        //retrieve the item from the stock list
+        StockItem stockItem = stockList.get(item);
+        if (stockItem == null) {
+            System.out.println(item + " Doesn't exist in the basket");
+            return  0;
+        }
+
+        if (stockList.adjustReservedStock(item, -quantity) !=  0) {
+            basket.removeItem(stockItem,quantity);
+            return quantity;
+        }
+
+        return 0;
+    }
 }
